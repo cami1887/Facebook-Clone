@@ -1,0 +1,246 @@
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* width: 680px; */
+    padding: 0 32px;
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    width: 100%;
+}
+
+.story-row {
+    position: relative;
+    padding-top: 75px;
+    display: flex;
+    gap: 8px;
+    z-index: -1;
+}
+
+.profile-story, .personal-profile-story{
+    height: 225px;
+    width: 130px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgb(194, 194, 194);
+    color: white;
+}
+
+.personal-profile-story .profile-picture {
+    height: 180px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.personal-profile-story-content {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+}
+
+.create-story-text {
+    color: black;
+}
+
+.personal-profile-story-content .bottom-bar {
+    position: absolute;
+    background-color: white;
+    height: 45px;
+    width: 100%;
+    z-index: -1;
+    top: -17px;
+    border-radius: 0 0 12px 12px;
+}
+
+.personal-profile-story-content .add-icon {
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    padding: 2px;
+    height: 36px;
+    width: 36px;
+    top: -40px;
+    right: 46px;
+}
+
+.profile-story .friend-story {
+    height: 225px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profile-story-content {
+    position: relative;
+}
+
+.profile-story-content .friend-profile {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    bottom: 175px;
+    left: 15px;
+    object-fit: cover;
+    border-radius: 50px;
+    background-color: #1876F2;
+    padding: 4px;
+}
+
+.profile-story-content p {
+    position: absolute;
+    bottom: -3px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.next-button {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+    position: absolute;
+    top: 170px;
+    right: -20px;
+}
+
+.next-icon {
+    width: 18px;
+}
+
+.status-update {
+    display: flex;
+    padding: 15px;
+    gap: 5px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
+}
+
+.input-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-status .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    box-shadow: inset 1px 1px 1px rgb(0, 0, 0);
+}
+
+.input-status input {
+    width: 590px;
+    background-color: rgba(218, 222, 226, 0.466);
+    border: none;
+    border-radius: 20px;
+    padding-left: 12px;
+    font-size: 17px;
+}
+
+.status-features-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.status-features{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    height: 28px;
+}
+
+.status-features img {
+    height: 24px;
+}
+
+.create-room-row {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.create-room-row button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    height: 40px;
+    color: rgb(63, 137, 233);
+    font-weight: bold;
+    font-size: 15px;
+    border: solid #1876f221 2px;
+    border-radius: 20px;
+}
+
+.create-room-row img {
+    height: 20px;
+    padding-left: 8px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
+    padding: 8px 24px 8px 17px;
+}
+
+.post-information {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 4px;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.friend-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.friend-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-row {
+    display: flex;
+    height: 20px;
+    gap: 15px;
+}
+
+.post-picture {
+    height: 680px;
+}
+
+.suggested-post-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
+    padding: 15px;
+}

@@ -1,0 +1,132 @@
+.left-nav {
+    width: 285.5px;
+    position: fixed;
+    font-weight: 500;
+    top: 70px;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.left-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+.left-nav a {
+    padding: 1px 8px;
+    border-radius: 10px;
+    transition: background-color .08s;
+}
+
+.left-nav a:hover {
+    background-color: rgba(223, 223, 223, 0.651);
+}
+
+.shortcut-one, .shortcut-two, .shortcut-three, .shortcut-four, .shortcut-five{
+    padding: 1px 8px;
+    border-radius: 10px;
+    transition: background-color .08s;
+}
+
+.shortcut-one:hover, .shortcut-two:hover, .shortcut-three:hover, .shortcut-four:hover, .shortcut-five:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.profile-nav a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.profile-nav img {
+    height: 36px;
+    width: 36px;
+}
+
+.see-more-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+.see-more-overlay .see-more-icon {
+    height: 12px;
+    width: 12px;
+}
+
+.see-more:hover 
+    .see-more-overlay {
+        background-color: rgb(220, 220, 220);
+}
+
+.profile-nav-hr {
+    padding-left: 8px;
+}
+
+.shortcuts-nav {
+    font-size: 17px;
+}
+
+.shortcuts-nav div {
+    display: flex;
+    font-size: 15px;
+    gap: 15px;
+}
+
+.shortcuts-nav .shortcuts-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    background-color: #F0F2F5;
+    color: rgb(112, 112, 112);
+    padding: 5px 8px 8px;
+}
+
+
+.shortcuts-title span {
+    color: rgb(13, 112, 206);
+    font-weight: normal;
+    font-size: 15px;
+    opacity: 0;
+}
+
+.shortcuts-nav:hover 
+    .shortcuts-title span {
+        opacity: 1;
+    }
+
+.shortcuts-nav img {
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    align-self: center;
+    object-fit: cover;
+}
+
+/*remember to make it disappear once it runs into the other content */
+.legal-section {
+    display: inline-block;
+    position: fixed;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(112, 112, 112);
+    gap: 4px;
+    width: 285.5px;
+    padding-left: 8px;
+    bottom: 0;
+}
+
+.legal-section li {
+    display: inline-block;
+}
+
+.legal-section img {
+    height: 12px;
+    width: 14px;
+}

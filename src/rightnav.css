@@ -1,0 +1,234 @@
+.right-nav {
+    position: fixed;
+    right: 15px;
+    top: 60px;
+    bottom: 0px;
+    width: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+
+.right-nav hr {
+    width: 335px;
+}
+
+.right-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+.online-status {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    background-color: rgb(0, 145, 31);
+  }
+
+.sponsor-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.sponsored-column {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 10px; */
+}
+.sponsored-post, .sponsored-post-two {
+    display: flex;
+    gap: 13px;
+}
+
+.sponsored-post:hover, .sponsored-post-two:hover {
+    background-color: #d4d4d456;
+    border-radius: 8px;
+}
+
+.sponsor-image {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sponsored-post, .sponsored-post-two {
+    /* padding-top: 17px;
+    padding-bottom: 8px; */
+    padding: 8px 7px;
+}
+
+.sponsor-post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sponsor-post-text .sponsor-name {
+    font-weight: 500;
+    margin: 0px;
+}
+
+.sponsor-link {
+    font-size: 14px;
+    color: #707070;
+}
+
+.birthday-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #707070;
+    padding-left: 8px;
+}
+
+.contacts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contacts {
+    position: relative;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.contacts:hover  {
+    background-color: #d4d4d456;
+    border-radius: 8px;
+}
+
+.group-conversation:hover {
+    background-color: #d4d4d456;
+    border-radius: 8px;
+    z-index: -2;
+}
+
+.group-conversation:hover 
+    .image-two {
+        z-index: -1;
+    }
+
+.contacts img {
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.contacts-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.contacts-title {
+    margin: 5px 0px 0px 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.contacts-icons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.contacts-icons img {
+    height: 18px;
+}
+
+.contacts-icons .new-call-icon {
+    height: 14px;
+    width: 19px;
+}
+
+.group-conversation {
+    display: flex;
+    align-items:flex-end;
+    gap: 26px;
+}
+
+.group-conversations-title {
+    margin: 0px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #707070;
+    padding-left: 8px;
+}
+
+.group-conversation-profiles {
+    position: relative;
+    padding-left: 8px;
+}
+
+.group-conversation-members {
+    font-weight: 500;
+}
+
+.group-conversation img {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.group-conversation .online-status {
+    bottom: 5px;
+    right: -10px;
+  }
+
+.image-two {
+    position: absolute;
+    top: -13px;
+    left: 21px;
+    z-index: -1;
+}
+
+.create-new-group-row {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 13px;
+    padding-left: 8px;
+}
+
+.create-new-group-icon { /* why can't I adjust the position?*/
+    height: 36px;
+    width: 36px;
+    border-radius: 100px;
+    background-color: #e4e4e4;
+    font-size: 24px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.create-new-group {
+    font-weight: 500;
+    margin: 0px;
+}
+
+.contacts .online-status {
+    bottom: 6px;
+    left: 31px;
+    border: solid #e4e4e4 2px;
+    border-radius: 8px;
+}
+
+.create-new-group-row:hover {
+    background-color: #d4d4d456;
+    border-radius: 8px;
+}
+
+.create-new-group-row:hover 
+    .create-new-group-icon{
+    background-color: #dadada;
+   
+}
+
