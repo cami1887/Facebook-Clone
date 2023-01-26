@@ -1,45 +1,53 @@
 main {
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* width: 680px; */
+    margin: auto;
     padding: 0 32px;
+    transition: all .15s; 
+    -o-transition: all .15s; 
+    -moz-transition: all .15s; 
+    -webkit-transition: all .15s;
+    width: 680px;
 }
 
 hr {
-    height: 1px;
     background-color: rgb(233, 233, 233);
     border: none;
+    height: 1px;
     width: 100%;
 }
 
 .story-row {
-    position: relative;
-    padding-top: 75px;
     display: flex;
     gap: 8px;
+    padding-top: 75px;
+    position: relative;
+    transition: all .25s; 
+    -o-transition: all .25s; 
+    -moz-transition: all .25s; 
+    -webkit-transition: all .25s;
     z-index: -1;
 }
 
 .profile-story, .personal-profile-story{
-    height: 225px;
-    width: 130px;
     border-radius: 10px;
     box-shadow: 0 1px 2px rgb(194, 194, 194);
     color: white;
+    height: 225px;
+    width: 130px;
 }
 
 .personal-profile-story .profile-picture {
-    height: 180px;
-    width: 130px;
-    object-fit: cover;
     border-radius: 10px 10px 0 0;
+    height: 180px;
+    object-fit: cover;
+    width: 130px;
 }
 
 .personal-profile-story-content {
-    position: relative;
     font-size: 14px;
+    position: relative;
     text-align: center;
 }
 
@@ -48,31 +56,31 @@ hr {
 }
 
 .personal-profile-story-content .bottom-bar {
-    position: absolute;
     background-color: white;
+    border-radius: 0 0 12px 12px;
     height: 45px;
+    position: absolute;
+    top: -17px;
     width: 100%;
     z-index: -1;
-    top: -17px;
-    border-radius: 0 0 12px 12px;
 }
 
 .personal-profile-story-content .add-icon {
-    position: absolute;
     background-color: white;
     border-radius: 30px;
-    padding: 2px;
     height: 36px;
-    width: 36px;
-    top: -40px;
+    padding: 2px;
+    position: absolute;
     right: 46px;
+    top: -40px;
+    width: 36px; 
 }
 
 .profile-story .friend-story {
-    height: 225px;
-    width: 130px;
-    object-fit: cover;
     border-radius: 10px;
+    height: 225px;
+    object-fit: cover;
+    width: 130px;
 }
 
 .profile-story-content {
@@ -80,35 +88,35 @@ hr {
 }
 
 .profile-story-content .friend-profile {
-    position: absolute;
-    height: 32px;
-    width: 32px;
+    background-color: #1876F2;
+    border-radius: 50px;
     bottom: 175px;
+    height: 32px;
     left: 15px;
     object-fit: cover;
-    border-radius: 50px;
-    background-color: #1876F2;
     padding: 4px;
+    position: absolute;
+    width: 32px;
 }
 
 .profile-story-content p {
-    position: absolute;
     bottom: -3px;
-    padding-left: 12px;
     font-size: 14px;
     font-weight: 500;
+    padding-left: 12px;
+    position: absolute;
 }
 
 .next-button {
     background-color: white;
     border: none;
-    height: 40px;
-    width: 40px;
     border-radius: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+    height: 40px;
     position: absolute;
-    top: 170px;
     right: -20px;
+    top: 170px;
+    width: 40px;
 }
 
 .next-icon {
@@ -116,13 +124,13 @@ hr {
 }
 
 .status-update {
-    display: flex;
-    padding: 15px;
-    gap: 5px;
     background-color: white;
-    flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
 }
 
 .input-status {
@@ -131,19 +139,19 @@ hr {
 }
 
 .input-status .profile-picture {
-    width: 40px;
-    height: 40px;
     border-radius: 100px;
     box-shadow: inset 1px 1px 1px rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
 }
 
 .input-status input {
-    width: 590px;
     background-color: rgba(218, 222, 226, 0.466);
     border: none;
     border-radius: 20px;
-    padding-left: 12px;
     font-size: 17px;
+    padding-left: 12px;
+    width: 90%;
 }
 
 .status-features-row {
@@ -152,12 +160,12 @@ hr {
 }
 
 .status-features{
-    display: flex;
-    gap: 10px;
     align-items: center;
+    color: grey;
+    display: flex;
     font-size: 16px;
     font-weight: 500;
-    color: grey;
+    gap: 10px;
     height: 28px;
 }
 
@@ -167,22 +175,22 @@ hr {
 
 .create-room-row {
     background-color: white;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
     border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
     padding: 15px;
 }
 
 .create-room-row button {
-    display: flex;
     align-items: center;
-    gap: 10px;
     background-color: white;
-    height: 40px;
-    color: rgb(63, 137, 233);
-    font-weight: bold;
-    font-size: 15px;
     border: solid #1876f221 2px;
     border-radius: 20px;
+    color: rgb(63, 137, 233);
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 10px;
+    height: 40px;
 }
 
 .create-room-row img {
@@ -190,57 +198,397 @@ hr {
     padding-left: 8px;
 }
 
-.post-container {
-    display: flex;
-    flex-direction: column;
+.suggested-post-container, .post-container {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
-    padding: 8px 24px 8px 17px;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-information {
-    display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 12px;
-    line-height: 4px;
     color: grey;
-    padding-bottom: 10px;
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    line-height: 4px;
+    padding: 8px 0 0 17px;
 }
 
 .profile-name {
+    color: black;
     font-size: 16px;
     font-weight: 500;
-    color: black;
 }
 
 .friend-profile {
-    height: 40px;
-    width: 40px;
     border-radius: 20px;
+    height: 40px;
     object-fit: cover;
+    width: 40px;
 }
 
 .friend-post {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .icon-row {
     display: flex;
-    height: 20px;
     gap: 15px;
+    height: 20px;
+    padding: 8px 24px 8px 0;
+}
+
+.post-description {
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 0 17px;
 }
 
 .post-picture {
     height: 680px;
+    object-fit: cover;
+}
+
+.likes-row {
+    align-items: center;
+    color: rgb(90, 90, 90);
+    display: flex;
+    font-size: 16px;
+    height: 30px;
+    justify-content: space-between;
+    padding: 5px 17px 5px 13px;
+    padding-left: 13px;
+    padding-right: 17px;
+    position: relative;
+}
+
+.reaction-row {
+    align-items: center;
+    display: flex;
+    vertical-align: bottom;
+}
+
+.reaction-row .reaction-icon-one {
+    background-color: white;
+    border-radius: 50px;
+    height: 24px;
+    position: absolute;
+    top: 9px;
+    z-index: 2;
+}
+
+.reaction-row .reaction-icon-two {
+    height: 22px;
+    left: 33px;
+    position: absolute;
+    top: 9.5px;
+    z-index: 1;
+}
+
+.reaction-row p {
+    font-size: 15px;
+    left: 60px;
+    position: absolute;
+}
+
+.interaction-row {
+    align-items: center;
+    color: rgb(90, 90, 90);
+    display: flex;
+    font-size: 16px;
+    gap: 5px;
+    height: 37px;
+    margin: auto;
+    width: 95%;
+}
+
+.like-button {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    height: 30px;
+    justify-content: center;
+    transition: background-color .15s;
+}
+
+.like-button:hover {
+    background-color: #e2e2e291;
+    border-radius: 5px;
+}
+
+.like-icon {
+    height: 25px;
+}
+
+.comment-button {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    height: 30px;
+    justify-content: center;
+    transition: background-color .15s;
+}
+
+.comment-button:hover {
+    background-color: #e2e2e291;
+    border-radius: 5px;
+}
+
+.comment-icon {
+    height: 20px;
+}
+
+.share-button {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    height: 30px;
+    justify-content: center;
+    transition: background-color .15s;
+}
+
+.share-button:hover {
+    background-color: #e2e2e291;
+    border-radius: 5px;
+}
+
+.share-icon {
+    height: 24px;
+}
+
+.suggested-post-container hr, .post-container hr{
+  margin: 0 0 0 11px;
+  width: 95%;
+}
+
+.comment-row {
+    padding: 7px 15px;
+}
+
+.comment-profile-section {
+    position: relative;
+}
+
+.comment-profile-section .profile-picture {
+    height: 32px;
+    object-fit: cover;
+    position: absolute;
+    top: 3px;
+    width: 32px;
+}
+
+.comment-profile-section .online-status {
+    border: solid white 2px;
+    left: 23px;
+    position: absolute;
+    top: 25px;
+}
+
+.comment-input-section {
+    position: relative;
+}
+
+.comment-input-section input {
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    height: 35px;
+    margin: 0 0 0 40px;
+    padding-left: 10px;
+    width: 93%;
+}
+
+.avatar-sticker {
+    height: 20px;
+    position: absolute;
+    right: 130px;
+    top: 9px; 
+}
+
+.smiley-face {
+    height: 28px;
+    position: absolute;
+    right: 95px;
+    top: 5px;
+}
+
+.camera-icon {
+    height: 22px;
+    position: absolute;
+    right: 65px;
+    top: 8px;
+    width: 21px;
+}
+
+.gif-icon {
+    height: 18px;
+    position: absolute;
+    right: 35px;
+    top: 9px;
+}
+
+.sticker-icon {
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+}
+
+.post-statistics span{
+    padding-left: 10px;
+}
+
+.suggested-title {
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+    margin: 10px 0 10px 15px;
 }
 
 .suggested-post-container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
-    padding: 15px;
+    padding-bottom: 5px;
+}
+
+.suggested-post-container .post-picture {
+    height: 300px;
+}
+
+.pusheen-post-picture {
+    height: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+    main {
+        width: 580px;
+    }
+
+    .profile-story, .personal-profile-story{
+        height: 185px;
+        width: 110px;
+    }
+    
+    .personal-profile-story-content .bottom-bar {
+        background-color: white;
+        height: 50px;
+        position: absolute;
+        top: -9px;
+        width: 100%;
+    }
+    
+    .personal-profile-story-content .add-icon {
+        height: 36px;
+        padding: 2px;
+        right: 35px;
+        top: -25px;
+        width: 36px;
+    }
+
+    .personal-profile-story .profile-picture {
+        height: 140px;
+        width: 110px;
+    }
+
+    .profile-story .friend-story {
+        height: 185px;
+        width: 110px;
+    }
+
+    .create-story-text {
+        color: black;
+        left: 17px;
+        position: absolute;
+    }
+
+    .profile-story-content .friend-profile {
+        bottom: 138px;
+        left: 12px;
+    }
+
+    .comment-input-section input {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    main {
+        width: 465px;
+    }
+
+    .story-row > a:nth-of-type(4) {
+        display: none;
+    }
+
+    .comment-input-section input {
+        width: 91%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .comment-input-section input {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    main {
+        margin: 0;
+        width: 580px;
+    }
+
+    .story-row > a:nth-of-type(4) {
+        display: inline;
+    }
+
+    .profile-story, .personal-profile-story{
+        height: 185px;
+        width: 110px;
+    }
+    
+    .personal-profile-story-content .bottom-bar {
+        background-color: white;
+        height: 50px;
+        position: absolute;
+        top: -9px;
+        width: 100%;
+    }
+    
+    .personal-profile-story-content .add-icon {
+        height: 36px;
+        padding: 2px;
+        right: 35px;
+        top: -25px;
+        width: 36px;
+    }
+
+    .personal-profile-story .profile-picture {
+        height: 140px;
+        width: 110px;
+    }
+
+    .profile-story .friend-story {
+        height: 185px;
+        width: 110px;
+    }
+
+    .create-story-text {
+        color: black;
+        left: 17px;
+        position: absolute;
+    }
+
+    .profile-story-content .friend-profile {
+        bottom: 138px;
+        left: 12px;
+    }
+
+    .comment-input-section input {
+        width: 91%;
+    }
 }

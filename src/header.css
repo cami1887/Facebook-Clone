@@ -1,27 +1,28 @@
 header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-color: white;
     border: none;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.089);
-    background-color: white;
-    position: fixed;
+    display: flex;
     height: 56px;
-    top: 0;
-    right: 0;
+    justify-content: space-between;
     left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
 }
 
 .facebook-icon {
-    padding: 0px 5px 0px 10px;
+    padding: 0 5px 0 10px;
     vertical-align: middle;
 }
 
 .search-container {
-    display: flex;
-    white-space: nowrap;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    flex: 1;
+    white-space: nowrap;
 }
 
 .search-bar-row {
@@ -29,10 +30,14 @@ header {
 }
 
 .search-bar {
-    font-size: 14px;
-    padding: 0px 0px 0px 40px;
-    border-radius: 50px; 
     border: none;
+    border-radius: 50px; 
+    font-size: 14px;
+    padding: 0 0 0 40px;
+    transition: all .25s; 
+    -o-transition: all .25s; 
+    -moz-transition: all .25s; 
+    -webkit-transition: all .25s;
 }
 
 input:focus {
@@ -40,26 +45,26 @@ input:focus {
 }
 
 .search-icon {
-    position: absolute;
-    padding: 0px 10px;
     height: 17px;
+    padding: 0 10px;
+    position: absolute;
     top: 25%;
 }
 
 .feed-container {
+    align-items: center;
     display: flex;
     gap: 8px;
-    align-items: center;
     padding-left: 13px;
 }
 
 .feed-container img {
-    height: 27px;
     background-color: rgb(255, 255, 255);
-    padding: 11px 51px;
     border-radius: 10px;
-    vertical-align: middle;
+    height: 27px;
+    padding: 11px 51px;
     transition: background-color .1s;
+    vertical-align: middle;
 }
 
 .feed-container img:hover {
@@ -68,9 +73,9 @@ input:focus {
 
 .feed-container .home-feed{
     border-bottom: solid;
-    border-radius: 0px;
-    padding: 13px 51px;
     border-color: rgb(0, 120, 233);
+    border-radius: 0;
+    padding: 13px 51px;
 }
 
 .feed-container .home-feed:hover {
@@ -78,16 +83,16 @@ input:focus {
 }
 
 .menu-container {
-    width: 300px;
-    justify-content: right;
+    flex: 1;
     gap: 7px;
-    padding-right: 17px;
+    justify-content: right;
+    padding-right: 17px;width: 300px;
 }
 
 .menu-container a {
-    padding: 6px 11.5px 9.1px;
     background-color: #e9e9e9;
     border-radius: 100px;
+    padding: 6px 11.5px 9.1px;
 }
 
 .menu-container img {
@@ -101,19 +106,19 @@ input:focus {
 }
 
 .menu-container .profile-picture {
-    height: 40px;
     border-radius: 30px;
+    height: 40px;
 }
 
 .menu-container .profile-anchor {
-    padding: 0px;
     height: 40px;
+    padding: 0;
+    
 }
 
 .menu-container .menu-anchor {
     padding: 8px 8.5px;
 }
-
 
 .profile-picture {
     border-radius: 20px;
@@ -121,12 +126,12 @@ input:focus {
 }
 
 .search-bar {
-    border-radius: 20px;
-    border: none;
     background-color: #F0F2F5;
+    border: none;
+    border-radius: 20px;
     height: 40px;
-    width: 200px;
     margin: auto;
+    width: 200px;
 }
 
 .feed-container {
@@ -135,4 +140,16 @@ input:focus {
 
 .menu-container {
     display: flex;
+}
+
+@media screen and (max-width: 1280px){
+    .search-bar {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .feed-container {
+        display: none;
+    }
 }

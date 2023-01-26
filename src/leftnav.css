@@ -1,11 +1,15 @@
 .left-nav {
-    width: 285.5px;
-    position: fixed;
-    font-weight: 500;
-    top: 70px;
     bottom: 0;
+    font-weight: 500;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: fixed;
+    top: 70px;
+    transition: all .25s; 
+    -o-transition: all .25s; 
+    -moz-transition: all .25s; 
+    -webkit-transition: all .25s;
+    width: 343px;
 }
 
 .left-nav::-webkit-scrollbar {
@@ -13,8 +17,8 @@
   }
 
 .left-nav a {
-    padding: 1px 8px;
     border-radius: 10px;
+    padding: 1px 8px;
     transition: background-color .08s;
 }
 
@@ -23,8 +27,8 @@
 }
 
 .shortcut-one, .shortcut-two, .shortcut-three, .shortcut-four, .shortcut-five{
-    padding: 1px 8px;
     border-radius: 10px;
+    padding: 1px 8px;
     transition: background-color .08s;
 }
 
@@ -33,10 +37,10 @@
 }
 
 .profile-nav a{
-    display: flex;
     align-items: center;
-    gap: 15px;
+    display: flex;
     font-size: 15px;
+    gap: 15px;
 }
 
 .profile-nav img {
@@ -45,13 +49,13 @@
 }
 
 .see-more-overlay {
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: rgb(231, 231, 231);
-    width: 36px;
-    height: 36px;
     border-radius: 20px;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    width: 36px;
 }
 
 .see-more-overlay .see-more-icon {
@@ -79,19 +83,19 @@
 }
 
 .shortcuts-nav .shortcuts-title {
-    display: flex;
-    justify-content: space-between;
-    font-size: 17px;
     background-color: #F0F2F5;
     color: rgb(112, 112, 112);
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
     padding: 5px 8px 8px;
 }
 
 
 .shortcuts-title span {
     color: rgb(13, 112, 206);
-    font-weight: normal;
     font-size: 15px;
+    font-weight: normal;
     opacity: 0;
 }
 
@@ -101,25 +105,24 @@
     }
 
 .shortcuts-nav img {
-    height: 36px;
-    width: 36px;
-    border-radius: 8px;
     align-self: center;
+    border-radius: 8px;
+    height: 36px;
     object-fit: cover;
+    width: 36px;
 }
 
-/*remember to make it disappear once it runs into the other content */
 .legal-section {
+    bottom: 0;
+    color: rgb(112, 112, 112);
     display: inline-block;
-    position: fixed;
-    list-style-type: none;
     font-size: 14px;
     font-weight: normal;
-    color: rgb(112, 112, 112);
     gap: 4px;
-    width: 285.5px;
+    list-style-type: none;
     padding-left: 8px;
-    bottom: 0;
+    position: fixed;
+    width: 285.5px;
 }
 
 .legal-section li {
@@ -129,4 +132,16 @@
 .legal-section img {
     height: 12px;
     width: 14px;
+}
+
+@media screen and (max-width: 1450px) {
+    .left-nav {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .left-nav {
+        display: none;
+    }
 }
