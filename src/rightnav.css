@@ -127,16 +127,7 @@
     border-radius: 8px;
 }
 
-.group-conversation:hover {
-    background-color: #d4d4d456;
-    border-radius: 8px;
-    z-index: -2;
-}
 
-.group-conversation:hover 
-    .image-two {
-        z-index: -1;
-    }
 
 .contacts img {
     border-radius: 20px;
@@ -173,6 +164,16 @@
     width: 19px;
 }
 
+.group-conversation-profiles {
+    position: relative;
+}
+
+.group-conversation:hover {
+    background-color: #d4d4d456;
+    border-radius: 8px;
+    z-index: -2;
+}
+
 .group-conversation {
     align-items:flex-end;
     display: flex;
@@ -197,23 +198,34 @@
     font-weight: 500;
 }
 
+.group-conversations-images {
+    height: 40px;
+    width: 40px;
+}
+
 .group-conversation img {
     border-radius: 20px;
     height: 24px;
     object-fit: cover;
     width: 24px;
+    position: absolute;
 }
 
 .group-conversation .online-status {
     bottom: 5px;
-    right: -10px;
+    right: 0;
   }
 
+.image-one {
+    z-index: 2;
+    bottom: 5px;
+    left: 10px;
+}
+
 .image-two {
-    left: 21px;
-    position: absolute;
-    top: -13px;
-    z-index: -1;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .create-new-group-row {
@@ -243,7 +255,7 @@
     border: solid #e4e4e4 2px;
     border-radius: 8px;
     bottom: 6px;
-    left: 31px;
+    left: 30px;
 }
 
 .create-new-group-row:hover {
